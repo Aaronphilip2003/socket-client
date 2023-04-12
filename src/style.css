@@ -1,0 +1,104 @@
+/* Chat app container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Chat box */
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 700px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+/* Chat messages list */
+.chat-messages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Chat message item */
+.chat-message {
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Input box for entering message */
+.chat-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.chat-input button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Input box for entering name */
+.name-input {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+  width: 2%;
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+.name-input label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.name-input input {
+  flex-grow: 1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .chat-box {
+    height: 100%;
+    max-height: none;
+  }
+  
+  .chat-message {
+    max-width: 90%;
+  }
+}
